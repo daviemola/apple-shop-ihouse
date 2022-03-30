@@ -11,8 +11,8 @@ export default function Hero() {
             <br />
             discounts.
           </h1>
-          <div className="mx-36">
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-sm">
+          <div className="md:mx-36 mx-0">
+            <p className="lg:w-2/3 w-full mx-auto leading-relaxed text-sm">
               With every purchase through the site, you get points and you can
               redeem them for discounts on the next purchase.
               <br />

@@ -15,7 +15,7 @@ export default function Navbar() {
             />
           </span>
         </a>
-        <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center sm:block hidden">
           <a className="mr-5 hover:text-gray-300 text-white text-sm tracking-wider font-semibold">
             Call Us
           </a>
