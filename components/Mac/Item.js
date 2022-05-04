@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Item() {
   return (
     <div className="p-4 w-full">
-      <a className="block relative h-48 rounded overflow-hidden">
+      <a className="block relative h-48 rounded overflow-hidden text-center">
         <Image
           src="/mac/mac-pro-1.jpg"
           height={180}

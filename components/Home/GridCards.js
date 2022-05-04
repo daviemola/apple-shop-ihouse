@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function GridCards() {
   return (
-    <div className="max-w-6xl grid sm:grid-cols-2 grid-cols-1 gap-8 mb-12 mx-auto rounded mt-4">
+    <div className="max-w-7xl grid sm:grid-cols-2 grid-cols-1 gap-8 mb-12 mx-auto rounded mt-4">
       <div className="relative overflow-hidden bg-gray-100 rounded-md">
         <Image
           src="/phone.png"

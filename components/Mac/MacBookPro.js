@@ -4,7 +4,7 @@ import { AiFillCheckCircle } from "react-icons/ai";
 
 export default function MacBookPro() {
   return (
-    <div className="rounded-md border border-gray-200 px-4 py-4 mx-2 w-[320px]">
+    <div className="rounded-md border border-gray-200 px-4 py-4 mx-2 w-[320px] my-4">
       <Image src="/mac/mac-pro-1.jpg" height={300} width={300} alt="img" />
       <div className="my-4">
         <div>

@@ -13,14 +13,14 @@ export default function macbookpro({}) {
           <h1 className=" text-4xl text-center my-6">MacBook Pro</h1>
         </div>
         <div>
-          <div className="flex items-center justify-center mx-auto">
-            <button className="px-5 py-3 text-blue-600 border border-gray-200">
+          <div className="mx-auto flex flex-wrap md:flex-row flex-col justify-center">
+            <button className="px-5 py-3 mx-2 my-1 text-blue-600 border border-gray-200">
               MacBook Pro 14 inch
             </button>
-            <button className="px-5 py-3 text-blue-600 border border-gray-200">
+            <button className="px-5 py-3 mx-2 my-1 text-blue-600 border border-gray-200">
               MacBook Pro 16 inch
             </button>
-            <button className="px-5 py-3 text-blue-600 border border-gray-200">
+            <button className="px-5 py-3 mx-2 my-1 text-blue-600 border border-gray-200">
               MacBook Pro 13 inch
             </button>
           </div>
