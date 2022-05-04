@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="text-gray-600 h-12 md:bg-zinc-800 bg-gray-50 flex justify-center">
+      <header className="text-gray-600 h-12 md:bg-zinc-800 bg-gray-50 flex justify-center z-40">
         <div className="md:flex hidden flex-wrap items-center mx-auto container max-w-7xl">
           <a className=" text-gray-100">
             <span className="ml-3 text-xl">
