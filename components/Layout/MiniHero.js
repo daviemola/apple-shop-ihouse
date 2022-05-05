@@ -45,16 +45,20 @@ export default function MiniHero() {
     },
   ];
   return (
-    <div className="min-h-28 bg-zinc-900 flex justify-center">
-      <div className="container mx-auto flex flex-wrap items-center max-w-6xl my-6">
-        <ul className="grid mx-auto lg:grid-cols-8 md:grid-cols-6 grid-cols-3">
+    <div className="min-h-36 bg-zinc-900 flex justify-center">
+      <div className="mx-auto my-6 max-w-6xl overflow-x-auto no-scrollbar">
+        <div className="inline-flex gap-2 space-x-1 mx-auto">
+          {/* <div className="grid grid-cols-8"> */}
           {items.map((item) => (
-            <li key={item.id} className="mx-6">
-              <Image src={item.image} height={65} width={65} alt="img" />
-              <p className="text-white text-center text-sm">{item.name}</p>
-            </li>
+            <div key={item.id} className="mx-2 h-24 w-24 px-4">
+              <Image src={item.image} height={75} width={75} alt="img" />
+              <p className="text-white text-center text-xs sm:text-sm">
+                {item.name}
+              </p>
+            </div>
           ))}
-        </ul>
+          {/* </div> */}
+        </div>
       </div>
     </div>
   );

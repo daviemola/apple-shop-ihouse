@@ -3,14 +3,42 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoIosMenu } from "react-icons/io";
 import { BiSearch } from "react-icons/bi";
+import { FiX } from "react-icons/fi";
 import { IoCloseOutline } from "react-icons/io5";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [showSearchBar, setShowSearchBar] = useState(false);
 
   return (
     <>
+      <div
+        className={`z-20 h-20vh w-[100vw] fixed bg-zinc-100 min-w-screen top-0 left-0 ease-in-out duration-300  ${
+          showSearchBar ? "translate-y-0" : "-translate-y-[100vh]"
+        }`}
+      >
+        <div className="flex justify-center items-center w-full">
+          <div className="flex justify-center items-center">
+            <div className="md:w-96">
+              <input
+                type="search"
+                className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding  border-2 border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                id="exampleSearch2"
+                placeholder="Search products, accessories..."
+              />
+            </div>
+          </div>
+          <div>
+            <button
+              className="px-4 py-6 flex items-center focus:outline-none"
+              onClick={() => setShowSearchBar(!showSearchBar)}
+            >
+              <FiX className="text-2xl" />
+            </button>
+          </div>
+        </div>
+      </div>
       <header className="text-gray-600 h-12 md:bg-zinc-800 bg-gray-50 flex justify-center z-40">
         <div className="md:flex hidden flex-wrap items-center mx-auto container max-w-7xl">
           <a className=" text-gray-100">
@@ -23,34 +51,44 @@ export default function Navbar() {
               />
             </span>
           </a>
-          <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center sm:block">
-            <a className="mr-5 hover:text-gray-300 text-white text-sm tracking-wider font-semibold">
+
+          <nav className="md:ml-auto md:mr-auto inline-flex items-center text-base justify-center sm:flex">
+            <div className="mr-5 text-white cursor-pointer">
+              <AiOutlineShoppingCart />
+            </div>
+            <div
+              className="mr-5 text-white cursor-pointer"
+              onClick={() => setShowSearchBar(!showSearchBar)}
+            >
+              <BiSearch />{" "}
+            </div>
+            <div className="mr-5 hover:text-gray-300 cursor-pointer text-white text-sm tracking-wider font-semibold">
               Call Us
-            </a>
-            <a className="mr-5 hover:text-gray-300 text-white text-sm tracking-wider font-semibold">
+            </div>
+            <div className="mr-5 hover:text-gray-300 cursor-pointer text-white text-sm tracking-wider font-semibold">
               Used
-            </a>
-            <a className="mr-5 hover:text-gray-300 text-white text-sm tracking-wider font-semibold">
+            </div>
+            <div className="mr-5 hover:text-gray-300 cursor-pointer text-white text-sm tracking-wider font-semibold">
               Resellers
-            </a>
-            <a className="mr-5 hover:text-gray-300 text-white text-sm tracking-wider font-semibold">
+            </div>
+            <div className="mr-5 hover:text-gray-300 cursor-pointer text-white text-sm tracking-wider font-semibold">
               Accessories
-            </a>
-            <a className="mr-5 hover:text-gray-300 text-white text-sm tracking-wider font-semibold">
+            </div>
+            <div className="mr-5 hover:text-gray-300 cursor-pointer text-white text-sm tracking-wider font-semibold">
               Music
-            </a>
-            <a className="mr-5 hover:text-gray-300 text-white text-sm tracking-wider font-semibold">
+            </div>
+            <div className="mr-5 hover:text-gray-300 cursor-pointer text-white text-sm tracking-wider font-semibold">
               Watch
-            </a>
-            <a className="mr-5 hover:text-gray-300 text-white text-sm tracking-wider font-semibold">
+            </div>
+            <div className="mr-5 hover:text-gray-300 cursor-pointer text-white text-sm tracking-wider font-semibold">
               Iphone
-            </a>
-            <a className="mr-5 hover:text-gray-300 text-white text-sm tracking-wider font-semibold">
+            </div>
+            <div className="mr-5 hover:text-gray-300 cursor-pointer text-white text-sm tracking-wider font-semibold">
               Ipad
-            </a>
-            <a className="mr-5 hover:text-gray-300 text-white text-sm tracking-wider font-semibold">
+            </div>
+            <div className="mr-5 hover:text-gray-300 cursor-pointer text-white text-sm tracking-wider font-semibold">
               Mac
-            </a>
+            </div>
           </nav>
           <span className="ml-3 text-xl">
             <Image src="/logo-light.png" height={20} width={65} alt="logo" />
@@ -66,8 +104,11 @@ export default function Navbar() {
             </Link>
           </div>
           <div className="flex items-center justify-center">
-            <div className="mt-2">
-              <button>
+            <div
+              className="mt-2"
+              onClick={() => setShowSearchBar(!showSearchBar)}
+            >
+              <button className="focus:outline-none">
                 <BiSearch className="text-3xl" />
               </button>
             </div>
