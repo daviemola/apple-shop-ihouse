@@ -9,7 +9,7 @@ export default function Mac({}) {
   return (
     <Layout>
       <MiniHero />
-      <div className="my-4 mx-4 rounded-3xl min-h-[30vh] bg-zinc-900">
+      <div className="my-4 mx-4 sm:rounded-xl md:rounded-xl rounded-lg min-h-[30vh] bg-zinc-900">
         <div className="py-12">
           <h1 className="sm:text-5xl text-3xl text-gray-500 text-center">
             Mac Studio
@@ -30,7 +30,7 @@ export default function Mac({}) {
           </div>
         </div>
       </div>
-      <div className="my-4 mx-4 rounded-3xl min-h-[30vh] bg-zinc-900">
+      <div className="my-4 mx-4 sm:rounded-xl md:rounded-xl rounded-lg min-h-[30vh] bg-zinc-900">
         <div className="py-12">
           <h1 className="sm:text-5xl text-3xl text-gray-500 text-center">
             MacBook Pro
