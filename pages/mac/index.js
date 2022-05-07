@@ -48,7 +48,7 @@ export default function Mac({}) {
             its kind. Its a MacBook Pro with its terrifying abilities.
           </p>
           <Link href="#">
-            <a className="text-center text-blue-500 text-xl flex items-center justify-center py-6">
+            <a className="text-center text-blue-500 text-lg sm:text-xl flex items-center justify-center py-6">
               measuring 14 inches &gt; measuring 16 inches &gt;
             </a>
           </Link>

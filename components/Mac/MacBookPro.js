@@ -19,11 +19,19 @@ export default function MacBookPro() {
           <div className="flex items-center justify-center">
             <div className="flex flex-col items-center justify-center">
               <div className="rounded-full h-10 w-10 bg-gray-600 "></div>
-              <p className="text-xs mr-3">Astronomical gray</p>
+              <div>
+                <p className="text-xs mr-3 text-center">
+                  Astronomical
+                  <br /> gray
+                </p>
+              </div>
             </div>
             <div className="flex flex-col items-center justify-center">
               <div className="rounded-full h-10 w-10 bg-gray-400"></div>
-              <p className="text-xs">Silver</p>
+              <p className="text-xs">
+                Silver
+                <br />
+              </p>
             </div>
           </div>
         </div>
